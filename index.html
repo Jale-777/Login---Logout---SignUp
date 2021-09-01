@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous"/>
+</head>
+
+<body>
+
+    <div id="header">
+        <h4>Login/out - SignUp</h4>
+        <div>
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+            <span id="user-info"></span>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <div id="wrapper" class="none">
+        <h1>Login successfull. Wellcome!</h1>
+    </div>
+
+    <div class="login-form">
+        <h1>Login <i class="fa fa-user-circle" aria-hidden="true"></i></h1>
+        <input onkeyup="loginOnEnter(event)" type="text" placeholder="Email or Username" id="email">
+        <input onkeyup="loginOnEnter(event)" type="Password" placeholder="Password" id="password">
+        <p id="message" class="none">Please enter a valid data!</p>
+        <button id="login-button" onclick="login()"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</button>
+        <button id="signUp-button" onclick="signUp()"><i class="fa fa-user-plus" aria-hidden="true"></i> SignUp</button>
+    </div>
+
+    <div class="login-form none sign-up">
+        <h1>SignUp <i class="fa fa-user-plus" aria-hidden="true"></i></h1>
+        <input type="text" placeholder="First name" id="firstName">
+        <input type="text" placeholder="Last name" id="lastName">
+        <input type="text" placeholder="Email" id="signUpEmail">
+        <input type="text" placeholder="Username" id="username">
+        <input type="password" placeholder="Password" id="signUpPassword">
+        <button id="save-button" onclick="saveUser()"><i class="fa fa-sign-in" aria-hidden="true"></i> Confirm</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

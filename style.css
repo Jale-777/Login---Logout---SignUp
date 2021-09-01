@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(image.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#header {
+    position: fixed;
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgb(126, 37, 199);
+}
+
+#header h4 {
+    float: left;
+    margin: 0;
+    font-size: 2em;
+    color: white;
+}
+
+#header div {
+    float: right;
+    font-size: 25px;
+    color: white;
+}
+
+#header div button {
+    font-size: 18px;
+    margin: 5px 15px;
+    padding: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(240, 0, 0);
+}
+
+#header div button:hover {
+    color: white;
+    background-color: red;
+}
+
+.login-form {
+    width: 550px;
+    margin: auto;
+    margin-top: 10%;
+    padding: 30px;
+    background-color: rgba(238, 238, 238, .8);
+}
+
+.login-form p {
+    padding: 5px;
+    text-align: center;
+    color: red;
+    background-color: rgb(255, 189, 177);
+}
+
+input, .login-form button {
+    display: block;
+    font-size: 1.5em;
+    padding: 6px;
+    margin: 5px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#login-button, #save-button {
+    background-color: rgb(0, 145, 0);
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+#signUp-button {
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+#login-button:hover, #save-button:hover {
+    background-color: yellowgreen;
+}
+
+#signUp-button:hover {
+    opacity: .5;
+}
+
+.none {
+    display: none;
+}
+
+#wrapper {
+    background-color: rgba(202, 202, 202, .8);
+    width: 50%;
+    padding: 15px;
+    margin: auto;
+    margin-top: 10%;
+    text-align: center;
+}
